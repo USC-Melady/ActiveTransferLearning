@@ -1,0 +1,31 @@
+This is code related to two active transfer learning (ATL) papers from the USC Melady Lab (http://www-bcf.usc.edu/~liu32/melady.html):
+
+* David Kale and Yan Liu. Accelerating Active Learning with Transfer Learning. ICDM, 2013.
+* David Kale, Marjan Ghazvininejad, Anil Ramakrishna, Jingrui He, and Yan Liu. Hierarchical Active Transfer Learning. SDM, 2015.
+
+It includes research-quality MATLAB implementations of our two ATL algorithms, TIWCAL (ICDM 2013) and HATL (SDM 2015), as well as multiple active learning (AL) algorithms (IWCAL, Beygelzimer, et al., NIPS 2010; HSAL, Dasgupta and Hsu, ICML 2008), many simple baselines, and a recent ATL algorithm called Joint transfer and batch-mode active learning (JOTAL) from Chattopadhyay, et al., ICML 2013.
+
+DISCLAIMERS AND WHERE TO FIND THE LATEST VERSIONS
+
+This code was developed rapidly, so we do not claim that it is 100% bug free. It will continue to be developed and revised (off and on), so we recommend you check our github repository for the latest version: https://github.com/USC-Melady/ActiveTransferLearning. In particular, it does not yet include everything necessary to fully reproduce the results from our two papers, though we plan to add those scripts soon (including data preprocessing code). We are also working to unify the interfaces to the various algorithms so that it is easy to rapidly run experiments using multiple approaches.
+
+EXTERNAL DEPENDENCIES
+
+* the weighed instance versions of libsvm and liblinear: http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/#weights_for_data_instances
+* Grouped bar plots with error bars for MATLAB: http://www.mathworks.com/matlabcentral/fileexchange/47250-grouped-bar-plots-with-error-bars
+* Estimating a smooth precision-recall curve for MATALB: http://www.mathworks.com/matlabcentral/fileexchange/29250-estimating-a-smooth-precision-recall-curve
+* cvx for MATLAB: http://cvxr.com/
+
+CITATION
+
+If you use this code (for whatever purpose), please give credit where credit is due! For publications, please cite one of the above papers. Specifically, if you use one of our implementations of IWCAL, TIWCAL, or the Blitzer transfer learning framework, cite the ICDM 2013 paper. If you use one of our implementations of HSAL, HATL, or JOTAL, please cite the SDM 2015 paper.
+
+If you use this code (or ideas from our research) for commercial purposes, let us know. We are very interested in real world applications of our work.
+
+CONTACT
+
+Please send feedback, bugfix requests, and questions to David Kale (dkale@usc.edu OR davekale@gmail.com).
+
+gratefully,
+David C. Kale
+http://www-scf.usc.edu/~dkale/
